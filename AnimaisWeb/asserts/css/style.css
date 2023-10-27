@@ -7,47 +7,78 @@ body{
     margin: 0;
     border: 0;
     padding: 0;    
-    background-color: rgb(164, 236, 212);
+    background-color: rgb(41, 41, 41);
     display: flex;
 }
 
-/*Geral.Menu*/
-.menu{
-    width: 16%;
-    height: 100%;
+/*Menu Principal*/
+.menuPrincipal{
+    background-color: rgb(136,120,201,0.6);
+    overflow: hidden;
     position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background: #9f8eda;
-    border-right: 2px solid black;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    
-}
-
-#logo{
     width: 100%;
-    margin-top: 10px;
-    align-self: center;
+    height: 10%;
 }
 
-nav{
-    text-align: center;
+#logoP{
+    width: 70px;
+    float: left;
+    padding: 0 35px 0 20px;
 }
 
-a.menuLink:link, a.menuLink:visited{
+a.menuP:link, a.menuP:visited{
+    float: left;
     color:black;
     text-decoration: none;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    display: block;
+    padding: 25px 18px;
 }
 
-a.menuLink:hover{
-    color: yellowgreen;
-    font-size: 150%;
+a.menuP:hover, a.menuP:active{
+    color: rgb(255, 255, 255);
+    font-size: 130%;
     text-decoration: none;
-    text-shadow: 0 1px 3px rgba(6, 212, 185, 0.5);
+    text-shadow: 0 1px 3px rgba(255, 255, 255, 0.5);
+}
+
+.contat{
+    width: 70px;
+    float: right;
+    display: block;
+    padding: 5px 0 10px 0;
+}
+
+/*Menu Lateral*/
+.lateral{
+    width: 25%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: -25%;
+    background: rgb(136,120,201,.5);
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    border-radius: 0 0 10px 0;
+    text-align: center;
+    transition: all .5s;
+}
+
+.check{
+    width: 40px;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+input[type="checkbox"]:checked ~ nav{
+    transform: translateX(99%);
+}
+
+label{
+    position: absolute;
+    z-index: 1;
 }
 
 .listaMenu{
@@ -57,10 +88,31 @@ a.menuLink:hover{
     padding-left: 0px;
 }
 
+#logo{
+    width: 100%;
+    margin-top: 10px;
+    align-self: center;
+}
+
+a.menuLink:link, a.menuLink:visited{
+    color:black;
+    text-decoration: none;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    display: block;
+    padding: 3px 0 3px 0;
+}
+
+a.menuLink:hover, a.menuLink:active{
+    color: rgb(255, 255, 255);
+    font-size: 130%;
+    text-decoration: none;
+    text-shadow: 0 1px 3px rgba(255, 255, 255, 0.5);
+    background-color: rgb(136,120,201,.5);
+}
+
 .contatos{
     width: 90%;
-    align-self: center;
-    margin: 0 0 6px 0;
+    padding: 6px 0;
 }
 
 a.conts:link, a.conts:visited {
@@ -92,5 +144,6 @@ h1{
 }
 
 .padrao{
-    width: 300px;
+    width: 100px;
+    border-radius: 10px;
 }
