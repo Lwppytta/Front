@@ -5,52 +5,45 @@
 }
 
 body{
-    margin: 0 8%;
     background-color: rgb(237, 219, 255);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-h1{
-    margin: 2% 0;
-}
-
-h2{
-    margin: 1% 0;
+h1, h2{
+    padding: 1%;
 }
 /*Index*/
 /*Menu*/
-nav{
+.container{
+    max-width: 80%;
+    margin: 0 auto;
     padding: 0;
+}
+
+nav{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color:blueviolet ;
     border-radius: 0 0 10px 10px;
+}
+
+nav .logo{
+    width: 35%;
+    font-size: 10pt;
+    font-style: italic;
+    color: white;
+    font-weight: bold;
+    display: flex;
     align-items: center;
 }
 
-.logo{
-    margin-left: 1%;
-    width: 30%;
+nav ul{
+    list-style: none;
     display: flex;
-    align-items: center;
 }
 
 .icone{
     width: 30%;
-}
-
-.titulo{
-    font-size: 12pt;
-    color: aliceblue;
-}
-
-ul{
-    display: inline-flex;
-    list-style-type: none;
-}
-
-li{
-    padding: 1%;
-    padding-right: 4%;
 }
 
 ul li a{
@@ -58,6 +51,7 @@ ul li a{
     padding: 10px;
     display: inline-block;
     text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 li a:hover{
@@ -66,14 +60,10 @@ li a:hover{
 }
 
 /*Main*/
-p{
-    font-size: 10pt;
-}
-
-.foto{
-    width: 30%;
-    height: 100%;
-    border-radius: 10px;
+main{
+    max-width: 80%;
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #sobre{
@@ -82,6 +72,16 @@ p{
     border-radius: 10px;
     background-color: rgb(164, 255, 240);
     align-items: center;
+}
+
+p{
+    font-size: 10pt;
+}
+
+.foto{
+    width: 30%;
+    height: 100%;
+    border-radius: 10px;
 }
 
 #video{
@@ -96,11 +96,16 @@ p{
 
 /*Rodape*/
 footer{
+    max-width: 80%;
+    margin: 0 auto;
     background-color: blueviolet;
     border-radius: 10px 10px 0 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
     display:flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .icons{
