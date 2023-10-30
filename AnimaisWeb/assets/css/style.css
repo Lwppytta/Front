@@ -95,6 +95,12 @@ label{
     z-index: 1;
 }
 
+#logoL{
+    width: 100%;
+    margin-top: 10px;
+    align-self: center;
+}
+
 .listaMenu{
     list-style-type: none;
     margin: 0;
@@ -102,13 +108,7 @@ label{
     padding-left: 0px;
 }
 
-#logo{
-    width: 100%;
-    margin-top: 10px;
-    align-self: center;
-}
-
-a.menuLink:link, a.menuLink:visited{
+.listaMenu a{
     color:black;
     text-decoration: none;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
@@ -116,7 +116,7 @@ a.menuLink:link, a.menuLink:visited{
     padding: 3px 0 3px 0;
 }
 
-a.menuLink:hover{
+.listaMenu a:hover{
     color: rgb(255, 255, 255);
     font-size: 130%;
     text-decoration: none;
@@ -124,12 +124,12 @@ a.menuLink:hover{
     background-color: rgb(136,120,201,.5);
 }
 
-.contatos{
+.contatosLateral{
     width: 90%;
     padding: 6px 0;
 }
 
-a.conts:link, a.conts:visited {
+.contatosLateral .conts{
     background-color: rgb(225, 216, 230);
     border: 2px solid rgb(0, 0, 0);
     padding: 3%;
@@ -137,18 +137,17 @@ a.conts:link, a.conts:visited {
     border-radius: 10px;
 }
 
-a.conts:hover{
+.conts:hover{
     background-color: aquamarine;
 }
 
-/*Geral.Conetudo*/
+/*Geral.Conteudo*/
 .principal{
     margin: 5% auto;
     padding: 3% 2%;
     width: 80%;
-    background-color: white;
+    background-color: #faf0ff;
     border-radius: 10%;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 /*Estilo*/
@@ -162,4 +161,46 @@ a.conts:hover{
 }
 
 /* Contato*/
+.contatosFormu{
+    color: #59429d;
+}
 
+#tituloFormulario{
+    font-family: sans-serif;
+    color: #380B61;
+    margin-left: 7%;
+}
+
+#subtituloFormulario{
+    font-family: sans-serif;
+    color: #380B61;
+    margin-left: 10%;
+}
+
+fieldset{
+    border: 0;
+}
+
+.camposFormulario input, select, textarea, button{
+    border-radius: 10px;
+}
+
+.camposFormulario{
+    margin-bottom: 1em;
+}
+
+.camposFormulario label{
+    margin-bottom: 0.2em;
+    display: block;
+}
+
+fieldset .grupoFormu .camposFormulario{
+    float: left;
+    margin-right: 1em;
+}
+
+.camposFormulario input[type="text"], .camposFormulario input[type="email"], .camposFormulario select, .camposFormulario textarea{
+    padding: 0.2em;
+    border: 1px solid #59429d;
+    box-shadow: 2px 2px 2px rgb(0,0,0,0.2);
+}
