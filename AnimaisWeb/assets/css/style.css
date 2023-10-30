@@ -1,7 +1,6 @@
 /*Geral*/
 *{
     margin: 0;
-    border: 0;
     box-sizing: border-box; 
 }
 
@@ -78,19 +77,23 @@ body{
     transition: all .5s;
 }
 
+hr{
+
+}
+
 .check{
     width: 40px;
 }
 
-input[type="checkbox"]{
+.menuLateral input[type="checkbox"]{
     display: none;
 }
 
-input[type="checkbox"]:checked ~ nav{
+.menuLateral input[type="checkbox"]:checked ~ nav{
     transform: translateX(99%);
 }
 
-label{
+#labelMenuLateral{
     position: absolute;
     z-index: 1;
 }
@@ -163,44 +166,26 @@ label{
 /* Contato*/
 .contatosFormu{
     color: #59429d;
+    
 }
 
-#tituloFormulario{
-    font-family: sans-serif;
+#tituloFormulario, #subtituloFormulario{
     color: #380B61;
-    margin-left: 7%;
-}
-
-#subtituloFormulario{
-    font-family: sans-serif;
-    color: #380B61;
-    margin-left: 10%;
-}
-
-fieldset{
-    border: 0;
-}
-
-.camposFormulario input, select, textarea, button{
-    border-radius: 10px;
+    margin-bottom: 1%;
 }
 
 .camposFormulario{
     margin-bottom: 1em;
+    display: flex;
 }
 
-.camposFormulario label{
-    margin-bottom: 0.2em;
-    display: block;
+.camposFormulario input, textarea{
+    border-radius: 10px;
 }
 
-fieldset .grupoFormu .camposFormulario{
-    float: left;
-    margin-right: 1em;
-}
-
-.camposFormulario input[type="text"], .camposFormulario input[type="email"], .camposFormulario select, .camposFormulario textarea{
+.camposFormulario input[type="text"], .camposFormulario input[type="email"], .camposFormulario textarea{
     padding: 0.2em;
     border: 1px solid #59429d;
     box-shadow: 2px 2px 2px rgb(0,0,0,0.2);
+    display: block;
 }
