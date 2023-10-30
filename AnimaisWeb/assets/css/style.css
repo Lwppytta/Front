@@ -1,52 +1,66 @@
 /*Geral*/
-body, html{
-    height: 100%;
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box; 
 }
 
 body{
-    margin: 0;
-    border: 0;
-    padding: 0;    
-    background-color: rgb(41, 41, 41);
+    background-image: linear-gradient(#00000001,#00000063), url(../img/fundo1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
     display: flex;
-}
+    flex-direction: column;
+}   
 
 /*Menu Principal*/
-.menuPrincipal{
-    background-color: rgb(136,120,201,0.6);
-    overflow: hidden;
-    position: fixed;
+.container{
     width: 100%;
-    height: 10%;
+    padding: 0.5%;
+    margin: 0 auto;
+    background-color: rgb(136,120,201,.98);
 }
 
-#logoP{
-    width: 70px;
-    float: left;
-    padding: 0 35px 0 20px;
+.menuPrincipal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-a.menuP:link, a.menuP:visited{
-    float: left;
-    color:black;
+.menuPrincipal .logoP{
+    font-size: 15px;
+    font-style: italic;
+    color: rgb(183, 207, 154);
+    font-weight: bold;
+    display: flex;
+    align-items:end;
+}
+
+.menuPrincipal .logoP #logoP{
+    width: 10vh;
+    background-color: rgb(250, 234, 214);
+    border-radius: 50%;
+}
+
+.menuPrincipal ul{
+    list-style: none;
+}
+
+.menuPrincipal ul li{
+    display: inline-block;
+    margin: 1vh;
+}
+
+.menuPrincipal ul li a{
     text-decoration: none;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-    display: block;
-    padding: 25px 18px;
+    font-size: 2vh;
+    color: black;
 }
 
-a.menuP:hover, a.menuP:active{
-    color: rgb(255, 255, 255);
-    font-size: 130%;
-    text-decoration: none;
-    text-shadow: 0 1px 3px rgba(255, 255, 255, 0.5);
-}
-
-.contat{
-    width: 70px;
-    float: right;
-    display: block;
-    padding: 5px 0 10px 0;
+.menuPrincipal ul li a:hover{
+    color: rgb(183, 207, 154);
 }
 
 /*Menu Lateral*/
@@ -102,7 +116,7 @@ a.menuLink:link, a.menuLink:visited{
     padding: 3px 0 3px 0;
 }
 
-a.menuLink:hover, a.menuLink:active{
+a.menuLink:hover{
     color: rgb(255, 255, 255);
     font-size: 130%;
     text-decoration: none;
@@ -116,26 +130,25 @@ a.menuLink:hover, a.menuLink:active{
 }
 
 a.conts:link, a.conts:visited {
-    background-color: rgb(230, 216, 216);
+    background-color: rgb(225, 216, 230);
     border: 2px solid rgb(0, 0, 0);
     padding: 3%;
     display: inline-block;
     border-radius: 10px;
 }
 
-a.conts:hover, a.conts:active{
+a.conts:hover{
     background-color: aquamarine;
 }
 
 /*Geral.Conetudo*/
 .principal{
-    margin-left: 16%;
-    padding-left: 10px;
+    margin: 5% auto;
+    padding: 3% 2%;
+    width: 80%;
+    background-color: white;
+    border-radius: 10%;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-}
-
-h1{
-    margin-left:150px;
 }
 
 /*Estilo*/
@@ -147,3 +160,6 @@ h1{
     width: 100px;
     border-radius: 10px;
 }
+
+/* Contato*/
+

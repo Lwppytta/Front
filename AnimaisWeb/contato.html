@@ -5,27 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animais</title>
-    <link rel="stylesheet" href="asserts/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
-    <input type="checkbox" id="chec">
+    <input type="checkbox" name="clickMenuLateral" id="chec">
     <label for="chec">
-        <img class="check" src="asserts/img/logos/menu.png">
+        <img class="check" src="assets/img/logos/menu.png">
     </label>
 
     <nav class="lateral">
-        <img id="logo" src="asserts/img/logos/arvore2.png" alt="Logo">
+        <img id="logo" src="assets/img/logos/arvore2.png" alt="Logo">
         <ul class="listaMenu">
             <hr>
             <li><a class="menuLink" href="index.html">HOME</a></li>
             <hr>
-            <li><a class="menuLink" href="contato.html">NOVIDADES</a></li>
+            <li><a class="menuLink" href="">NOVIDADES</a></li>
             <hr>
-            <li><a class="menuLink" href="estilo.html"><li>ESTILO</a></li>
+            <li><a class="menuLink" href="estilo.html">ESTILO</a></li>
             <hr>
-            <li><a class="menuLink" href="">CONTATO</a></li>
+            <li><a class="menuLink" href="contato.html">CONTATO</a></li>
             <hr>
             <li><a class="menuLink" href="">SOBRE</a></li>
             <hr>
@@ -33,32 +33,128 @@
 
         <div class="contatos">
             <a class="conts" href="">
-                <img style="width: 20px;" src="asserts/img/logos/gitLogo.png" alt="gitLogo">
+                <img style="width: 20px;" src="assets/img/logos/gitLogo.png" alt="gitLogo">
             </a>
             <a class="conts" href="">
-                <img style="width: 20px;" src="asserts/img/logos/instaLogo.png" alt="instaLogo">
+                <img style="width: 20px;" src="assets/img/logos/instaLogo.png" alt="instaLogo">
             </a>
 
             <a class="conts" href="">
-                <img style="width: 20px;" src="asserts/img/logos/linkeLogo.png" alt="linkeLogo">
+                <img style="width: 20px;" src="assets/img/logos/linkeLogo.png" alt="linkeLogo">
+            </a>
+            <a class="conts" href="">
+                <img style="width: 20px;" src="assets/img/logos/faceLogo.png" alt="faceLogo">
             </a>
         </div>
     </nav>
 
     <div class="principal">
-        <header>
-            <h1>Ainda em Gatinhos</h1>
-            <h6>Gatinhos menores menores</h6>
+        <section1>
+            <header>
+                <h1>Ainda em Gatinhos</h1>
+                <h6>Gatinhos menores menores</h6>
 
-            <p>Gatinhos são animais que eu não posso ter... fazer o que né</p>
-        </header>
+                <p>Gatinhos são animais que eu não posso ter... fazer o que né</p>
+            </header>
 
-        <figure>
-            <img class="padrao" src="asserts/img/GatoKatia.png" alt="Gatinho Deitado Folgado">
-        </figure>
+            <figure>
+                <img class="padrao" src="assets/img/GatoKatia.png" alt="Gatinho Deitado Folgado">
+            </figure>
+        </section1>
+        <hr>
+        <section2 class="formu">
+            <h2>Mandem mensagens aqui:</h2>
+            <form>
+                <fieldset class="grupo">
+                    <div class="camposFormulario">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" onkeydown="validarNome()">
+                    </div>
+                    <div class="camposFormulario">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="camposFormulario">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea name="text" style="width: 25em" id="mensagem" cols="20" rows="5"></textarea>
+                    </div>
+                </fieldset>
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/NTQsSrVvC0g?si=4m0VeK_Nb8yvG9LD" title="YouTube video player" frameborder="5" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="camposFormulario">
+                    <label>Qual animalzinho você prefere?</label>
+                    <label>
+                        <input type="radio" name="animais" value="Dog">Doguinho
+                    </label>
+                    <label>
+                        <input type="radio" name="animais" value="Gato">Gatinho
+                    </label>
+                    <label>
+                        <input type="radio" name="animais" value="Ave">Passarinho
+                    </label>
+                    <label>
+                        <input type="radio" name="animais" value="Rato">Ratinho
+                    </label>
+                    <label>
+                        <input type="radio" name="animais" value="Outros">Outros
+                    </label>
+                </div>
+                
+                <div class="camposFormulario">
+                    <label>Quanto você joga diariamente?</label>
+                    <select id="horasJogadas">
+                        <option selected disabled value="">Selecione</option>
+                        <option>Não jogo</option>
+                        <option>Menos de 1 hora</option>
+                        <option>De 1 a 2 horas</option>
+                        <option>De 2 a 4 horas</option>
+                        <option>De 4 a 6 horas</option>
+                        <option>De 6 a 8 horas</option>
+                        <option>Mais de 8 horas</option>
+                    </select>
+                </div>
+
+                <fieldset class="grupo">
+                    <div class="camposFormulario">
+                        <label>Selecione os que você tem/tinha...</label>
+
+                        <input type="checkbox" id="animal1" name="animal1" value="Cachorro">
+                        <label for="animal1">Cachorro</label>
+
+                        <input type="checkbox" id="animal2" name="animal2" value="Gato">
+                        <label for="animal2">Gato</label>
+
+                        <input type="checkbox" id="animal3" name="animal3" value="Calopsita">
+                        <label for="animal3">Calopsita</label>
+
+                        <input type="checkbox" id="animal4" name="animal4" value="Papagaio">
+                        <label for="animal4">Papagaio</label>
+
+                        <input type="checkbox" id="animal5" name="animal5" value="Hamster">
+                        <label for="animal5">Hamster</label>
+
+                        <input type="checkbox" id="animal6" name="animal6" value="PorquinhoDaIndia">
+                        <label for="animal6">Porquinho da India</label>
+
+                        <input type="checkbox" id="animal7" name="animal7" value="Tartaruga">
+                        <label for="animal7">Tartaruga</label>
+
+                        <input type="checkbox" id="animal8" name="animal8" value="Galinha">
+                        <label for="animal8">Galinha</label>
+
+                        <input type="checkbox" id="animal9" name="animal9" value="Porco">
+                        <label for="animal9">Porco</label>
+
+                        <input type="checkbox" id="animal10" name="animal10" value="Coelho">
+                        <label for="animal10">Coelho</label>
+                    </div>
+                </fieldset>
+
+                <input type="submit" class="botaoFormulario" value="Enviar">
+            </form>
+        </section2>
     </div>
+
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
