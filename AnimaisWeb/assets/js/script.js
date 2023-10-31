@@ -43,3 +43,11 @@ function validarMensagem(){
         mensagemOk= true
     }
 }
+
+function enviar(){
+    if(nomeOk == true && emailOk == true && mensagemOk == true){
+        alert('Formulario enviado')
+    } else{
+        alert('Preencha as informações corretamnete.')
+    }
+}
