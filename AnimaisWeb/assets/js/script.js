@@ -1,8 +1,11 @@
-var nome = window.document.getElementById('nome');
-var nomeOk = false;
+let nome = window.document.getElementById('nome')
+let email = document.querySelector('#email')
+let mensagem = document.querySelector('#mensagem')
+
+var nomeOk = false
 
 function validarNome(){
-    let txtNome = document.querySelector('#TXTNome');
+    let txtNome = document.querySelector('#txtNome')
     if(nome.value.length < 3){
         txtNome.innerHTML= "Nome inválido."
         txtNome.style.color = 'red'
@@ -11,13 +14,5 @@ function validarNome(){
         txtNome.innerHTML= "Nome válido!"
         txtNome.style.color = 'green'
         nomeOk= true
-    }
-}
-
-function enviar(){
-    if(nomeOk == true){
-        alert('Formulário enviando com sucesso!'+nome.value)
-    } else{
-        alert('Preencha o formulário corretamente antes de enviar!')
     }
 }
