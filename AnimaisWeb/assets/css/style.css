@@ -15,7 +15,7 @@ body{
 }   
 
 /*Menu Principal*/
-.container{
+.containerPrincipal{
     width: 100%;
     padding: 0.5%;
     margin: 0 auto;
@@ -78,7 +78,8 @@ body{
 }
 
 hr{
-
+    width: 80%;
+    margin-left: 8%;
 }
 
 .check{
@@ -140,7 +141,7 @@ hr{
     border-radius: 10px;
 }
 
-.conts:hover{
+.contatosLateral .conts:hover{
     background-color: aquamarine;
 }
 
@@ -151,41 +152,11 @@ hr{
     width: 80%;
     background-color: #faf0ff;
     border-radius: 10%;
+    display: grid;
 }
 
 /*Estilo*/
-.container{
-    padding-left: 10px;
-}
-
 .padrao{
     width: 100px;
     border-radius: 10px;
-}
-
-/* Contato*/
-.contatosFormu{
-    color: #59429d;
-    
-}
-
-#tituloFormulario, #subtituloFormulario{
-    color: #380B61;
-    margin-bottom: 1%;
-}
-
-.camposFormulario{
-    margin-bottom: 1em;
-    display: flex;
-}
-
-.camposFormulario input, textarea{
-    border-radius: 10px;
-}
-
-.camposFormulario input[type="text"], .camposFormulario input[type="email"], .camposFormulario textarea{
-    padding: 0.2em;
-    border: 1px solid #59429d;
-    box-shadow: 2px 2px 2px rgb(0,0,0,0.2);
-    display: block;
 }

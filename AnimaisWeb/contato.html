@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animais</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/contatos.css">
 </head>
 
 <body>
@@ -49,106 +50,112 @@
         </nav>
     </div>
 
-    <div class="principal contatosFormu">
+    <div class="principal">
         <h1 id="tituloFormulario">Contatos</h1>
-        <div class="contatosLateral">
-            <a class="conts" href="">
-                <img style="width: 20px;" src="assets/img/logos/gitLogo.png" alt="gitLogo">
-            </a>
-            <a class="conts" href="">
-                <img style="width: 20px;" src="assets/img/logos/instaLogo.png" alt="instaLogo">
-            </a>
-
-            <a class="conts" href="">
-                <img style="width: 20px;" src="assets/img/logos/linkeLogo.png" alt="linkeLogo">
-            </a>
-            <a class="conts" href="">
-                <img style="width: 20px;" src="assets/img/logos/faceLogo.png" alt="faceLogo">
-            </a>
+        <div class="contatosFormu">
+            <ul>
+                <li><a href="">
+                        <img style="width: 30px;" src="assets/img/logos/gitLogo.png" alt="gitLogo">
+                    </a></li>
+                <li><a href="">
+                        <img style="width: 30px;" src="assets/img/logos/instaLogo.png" alt="instaLogo">
+                    </a></li>
+                <li><a href="">
+                        <img style="width: 30px;" src="assets/img/logos/linkeLogo.png" alt="linkeLogo">
+                    </a></li>
+                <li><a href="">
+                        <img style="width: 30px;" src="assets/img/logos/faceLogo.png" alt="faceLogo">
+                    </a></li>
+            </ul>
         </div>
 
         <h2 id="subtituloFormulario">Mandem mensagens aqui:</h2>
 
         <form>
-            <div class="camposFormulario">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" onkeydown="validarNome()">
-            </div>
-            <div class="camposFormulario">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
-            </div>
-            <div class="camposFormulario">
-                <label for="mensagem">Mensagem:</label>
-                <textarea name="text" style="width: 25em" id="mensagem" cols="20" rows="5"></textarea>
-            </div>
+            <section class="section1">
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" onkeydown="validarNome()">
 
-            <div class="camposFormulario">
-                <label>Qual animalzinho você prefere?</label>
-                <label>
-                    <input type="radio" name="animais" value="Dog">Doguinho
-                </label>
-                <label>
-                    <input type="radio" name="animais" value="Gato">Gatinho
-                </label>
-                <label>
-                    <input type="radio" name="animais" value="Ave">Passarinho
-                </label>
-                <label>
-                    <input type="radio" name="animais" value="Rato">Ratinho
-                </label>
-                <label>
-                    <input type="radio" name="animais" value="Outros">Outros
-                </label>
-            </div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea name="text" style="width: 20em" id="mensagem" cols="10" rows="4"></textarea>
+                </div>
+            </section>
 
-            <div class="camposFormulario">
-                <label>Quanto você joga diariamente?</label>
-                <select id="horasJogadas">
-                    <option selected disabled value="">Selecione</option>
-                    <option>Não jogo</option>
-                    <option>Menos de 1 hora</option>
-                    <option>De 1 a 2 horas</option>
-                    <option>De 2 a 4 horas</option>
-                    <option>De 4 a 6 horas</option>
-                    <option>De 6 a 8 horas</option>
-                    <option>Mais de 8 horas</option>
-                </select>
-            </div>
+            <section class="section2">
+                <div class="camposFormulario1">
+                    <div style="display: flex; flex-direction: column;">
+                        <label>Qual animalzinho você prefere?</label>
+                        <label>
+                            <input type="radio" name="animais" value="Dog">Doguinho
+                        </label>
+                        <label>
+                            <input type="radio" name="animais" value="Gato">Gatinho
+                        </label>
+                        <label>
+                            <input type="radio" name="animais" value="Ave">Passarinho
+                        </label>
+                        <label>
+                            <input type="radio" name="animais" value="Rato">Ratinho
+                        </label>
+                        <label>
+                            <input type="radio" name="animais" value="Outros">Outros
+                        </label>
+                    </div>
 
-            <div class="camposFormulario2">
-                <label>Selecione os que você tem/tinha...</label>
+                    <div style="display: flex; flex-direction: column;">
+                        <label>Quanto você joga diariamente?</label>
+                        <select id="horasJogadas">
+                            <option selected disabled value="">Selecione</option>
+                            <option>Não jogo</option>
+                            <option>Menos de 1 hora</option>
+                            <option>De 1 a 2 horas</option>
+                            <option>De 2 a 4 horas</option>
+                            <option>De 4 a 6 horas</option>
+                            <option>De 6 a 8 horas</option>
+                            <option>Mais de 8 horas</option>
+                        </select>
+                    </div>
+                </div>
 
-                <input type="checkbox" id="animal1" name="animal1" value="Cachorro">
-                <label for="animal1">Cachorro</label>
+                <div class="camposFormulario2">
+                    <label>Selecione os que você tem/tinha...</label>
 
-                <input type="checkbox" id="animal2" name="animal2" value="Gato">
-                <label for="animal2">Gato</label>
+                    <input type="checkbox" id="animal1" name="animal1" value="Cachorro">
+                    <label for="animal1">Cachorro</label>
 
-                <input type="checkbox" id="animal3" name="animal3" value="Calopsita">
-                <label for="animal3">Calopsita</label>
+                    <input type="checkbox" id="animal2" name="animal2" value="Gato">
+                    <label for="animal2">Gato</label>
 
-                <input type="checkbox" id="animal4" name="animal4" value="Papagaio">
-                <label for="animal4">Papagaio</label>
+                    <input type="checkbox" id="animal3" name="animal3" value="Calopsita">
+                    <label for="animal3">Calopsita</label>
 
-                <input type="checkbox" id="animal5" name="animal5" value="Hamster">
-                <label for="animal5">Hamster</label>
+                    <input type="checkbox" id="animal4" name="animal4" value="Papagaio">
+                    <label for="animal4">Papagaio</label>
 
-                <input type="checkbox" id="animal6" name="animal6" value="PorquinhoDaIndia">
-                <label for="animal6">Porquinho da India</label>
+                    <input type="checkbox" id="animal5" name="animal5" value="Hamster">
+                    <label for="animal5">Hamster</label>
 
-                <input type="checkbox" id="animal7" name="animal7" value="Tartaruga">
-                <label for="animal7">Tartaruga</label>
+                    <input type="checkbox" id="animal6" name="animal6" value="PorquinhoDaIndia">
+                    <label for="animal6">Porquinho da India</label>
 
-                <input type="checkbox" id="animal8" name="animal8" value="Galinha">
-                <label for="animal8">Galinha</label>
+                    <input type="checkbox" id="animal7" name="animal7" value="Tartaruga">
+                    <label for="animal7">Tartaruga</label>
 
-                <input type="checkbox" id="animal9" name="animal9" value="Porco">
-                <label for="animal9">Porco</label>
+                    <input type="checkbox" id="animal8" name="animal8" value="Galinha">
+                    <label for="animal8">Galinha</label>
 
-                <input type="checkbox" id="animal10" name="animal10" value="Coelho">
-                <label for="animal10">Coelho</label>
-            </div>
+                    <input type="checkbox" id="animal9" name="animal9" value="Porco">
+                    <label for="animal9">Porco</label>
+
+                    <input type="checkbox" id="animal10" name="animal10" value="Coelho">
+                    <label for="animal10">Coelho</label>
+                </div>
+            </section>
 
             <input type="submit" class="botaoFormulario" value="Enviar">
         </form>
