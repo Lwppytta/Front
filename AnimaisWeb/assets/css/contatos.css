@@ -53,6 +53,11 @@ form .section2{
     justify-content: space-around;
 }
 
+form .section2 .camposFormulario1 div{
+    display: flex; 
+    flex-direction: column;
+}
+
 form .section2 .camposFormulario1 label{
     margin-bottom: 2%;
 }

@@ -2,8 +2,7 @@ let nome = window.document.getElementById('nome')
 let email = document.querySelector('#email')
 let mensagem = document.querySelector('#mensagem')
 
-var nomeOk = false
-
+let nomeOk = false
 function validarNome(){
     let txtNome = document.querySelector('#txtNome')
     if(nome.value.length < 3){
@@ -14,5 +13,19 @@ function validarNome(){
         txtNome.innerHTML= "Nome válido!"
         txtNome.style.color = 'green'
         nomeOk= true
+    }
+}
+
+let emailOk = false
+function validarEmail(){
+    let txtEmail = document.querySelector('#txtEmail')
+    if(email.value.indexOf('@') == -1 || email.value.indexOf('.') == -1){
+        txtEmail.innerHTML= "Email inválido."
+        txtEmail.style.color = 'red'
+        emailOk= false
+    } else{
+        txtEmail.innerHTML= "Email válido!"
+        txtEmail.style.color = 'green'
+        emailOk= true
     }
 }
